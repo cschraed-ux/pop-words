@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pop Words — pop the dice, trace the words</title>
+  <meta name="description" content="Pop the dome, roll the letter dice and trace as many words as you can before the clock runs out. Classic, Daily and Party modes.">
+
+  <!-- Preview card shown when the link is shared in Messages, WhatsApp, etc. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pop Words">
+  <meta property="og:description" content="Pop the dice. Trace the words. Can you beat my score?">
+  <meta property="og:url" content="https://cschraed-ux.github.io/pop-words/">
+  <meta property="og:image" content="https://cschraed-ux.github.io/pop-words/og.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://cschraed-ux.github.io/pop-words/og.png">
+  <link rel="icon" href="icon.png">
+
+  <style>
+    :root { --ink: #2B1055; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding: 24px 16px; color: #fff; text-align: center;
+      font-family: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #FF6FB5, #B06BFF 50%, #5AB8FF) fixed;
+    }
+    main { width: 100%; max-width: 560px; }
+    .hero { width: 100%; height: auto; border-radius: 28px; box-shadow: 0 16px 40px rgba(43, 16, 85, .3); }
+    h1 { font-size: clamp(2rem, 8vw, 3rem); margin: 28px 0 8px; text-wrap: balance; }
+    p { font-size: 1.15rem; line-height: 1.5; margin: 0 auto 24px; max-width: 30em; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    .store {
+      display: inline-block; min-width: 200px; padding: 16px 24px; border-radius: 20px;
+      background: #fff; color: var(--ink); font-weight: 800; font-size: 1.05rem; text-decoration: none;
+      box-shadow: 0 6px 0 #D9C8F5;
+    }
+    .store small { display: block; font-weight: 600; opacity: .7; }
+    .store[aria-disabled="true"] { opacity: .75; cursor: default; }
+    footer { margin-top: 32px; font-size: .95rem; }
+    footer a { color: #fff; }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="hero" src="og.png" width="1024" height="500" alt="Pop Words: letter dice spelling the name of the game">
+    <h1>Pop the dice. Trace the words.</h1>
+    <p>Press the dome to roll the letter dice, then trace touching dice to spell as many words as you can before the clock runs out. Play solo, take on the Daily, or pass the phone around in Party mode.</p>
+
+    <!-- OWNER: when the app is listed, put each store address in href and remove aria-disabled and the "Coming soon" line. -->
+    <div class="buttons">
+      <a class="store" id="ios" aria-disabled="true"><small>Coming soon to the</small>App Store</a>
+      <a class="store" id="android" aria-disabled="true"><small>Coming soon to</small>Google Play</a>
+    </div>
+
+    <footer><a href="privacy-policy.html">Privacy Policy</a></footer>
+  </main>
+</body>
+</html>
